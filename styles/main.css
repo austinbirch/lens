@@ -1,0 +1,28 @@
+/* basic reset for the demo */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  padding: 1em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em; /* 24/16 */
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 1.5em; /* 24/16 */
+  line-height: 1em; /* 24/24 */
+  margin-bottom: 1em;
+}
+
