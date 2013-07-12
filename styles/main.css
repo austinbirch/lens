@@ -57,6 +57,24 @@ ol {
   font-size: 0.875em; /* 14/16 */
 }
 
+/* the below will have the effect of falling back to a vertical sequence of
+ * images if JavaScript is disabled. However, if you do not enable this
+ * fallback, then only the images required will be requested. For example:
+ *
+ * without fallback:
+ *   - on a retina device, the thumbnails will be requested, and only the retina
+ *     images that are viewed.
+ *
+ *   - on a non-retina device, the thumbnails will be requested, and only
+ *     non-retina images that are viewed.
+ *
+ * with fallback:
+ *   - on a retina device, the thumbnails and all of the non-retina images will
+ *     be requested, as well as any retina versions for any images that are
+ *     viewed.
+ *   - on a non-retina device, the thumbnails will be requested, and non-retina
+ *     versions of images that are viewed.
+ */
 .lens-image[data-image="/images/image01.jpg"] {
   background-image: url("/images/image01.jpg");
 }
