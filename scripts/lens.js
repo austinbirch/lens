@@ -3,10 +3,12 @@
   var defaults = {
     thumbnailOpacity: 0.3,
     thumbnailPath: function(path) {
-      return path.replace('.', '-thumb.');
+      var repl = path.replace('.jpg', '-thumb.jpg');
+      console.log(repl);
+      return repl;
     },
     retinaPath: function(path) {
-      return path.replace('.', '@2x.');
+      return path.replace('.jpg', '@2x.jpg');
     }
   };
 
@@ -63,6 +65,9 @@
       // find the standard version
       var $standard = self.$el.find(query).find('.lens-image').first();
 
+      // make sure the standard url is set
+      $standard.css('background-image', 'url(' + image.src + ')');
+
       // wrap the standard version in a wrapper so we can hide it
       $standard.wrap('<div class="lens-standard-wrapper" />');
 
@@ -70,7 +75,6 @@
 
       // set the retina background
       $img.css('background-image', 'url(' + url + ')');
-      $img.css('background-size', 'contain');
 
       // insert our image
       $imageWrapper.insertBefore($standardWrapper);

@@ -2,6 +2,10 @@
   margin-bottom: 1em;
 }
 
+.lens-image {
+  background-size: contain;
+}
+
 /* when we are at normal resolution, only show non-retina images */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1),
