@@ -26,3 +26,50 @@ h1 {
   margin-bottom: 1em;
 }
 
+h2 {
+  font-size: 1.3125em; /* 21/16 */
+  line-height: 1.142em; /* 24/21 */
+  margin: 0.571em 0;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.lens-gallery {
+  margin-bottom: 1.5em;
+  max-width: 800px;
+}
+
+.lens-image {
+  width: 800px;
+  height: 534px;
+}
+
+.lens-image-container {
+  margin-bottom: 1.5em;
+}
+
+.lens-image-container figcaption {
+  background-color: #eee;
+  line-height: 1.5em;
+  padding: 0 1em;
+  font-size: 0.875em; /* 14/16 */
+}
+
+.lens-image[data-image="/images/image01.jpg"] {
+  background-image: url("/images/image01.jpg");
+}
+
+.lens-image[data-image="/images/image02.jpg"] {
+  background-image: url("/images/image02.jpg");
+}
+
+.lens-image[data-image="/images/image03.jpg"] {
+  background-image: url("/images/image03.jpg");
+}
+
+.lens-image[data-image="/images/image04.jpg"] {
+  background-image: url("/images/image04.jpg");
+}
+
